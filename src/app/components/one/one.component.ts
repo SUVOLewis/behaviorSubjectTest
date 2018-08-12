@@ -8,7 +8,7 @@ import { UsersService } from '../../services/users.service';
 })
 export class OneComponent implements OnInit {
   user: string;
-  editUser: string;
+  editUser: string; // the NGModel
 
   constructor(private usersService: UsersService) { }
 
