@@ -14,6 +14,7 @@ export class OneComponent implements OnInit {
 
   ngOnInit() {
     this.usersService.cast.subscribe(user => this.user = user);
+    console.log('Subscribed component one');
   }
 
   editTheUser() {

@@ -12,5 +12,6 @@ export class UsersService {
 
   editUser (newUser) {
     this.user.next(newUser); // replaces the value of user with newUser
+    console.log('User changed to: ' + newUser);
   }
 }

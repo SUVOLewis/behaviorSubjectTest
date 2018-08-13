@@ -12,7 +12,8 @@ export class TwoComponent implements OnInit {
   constructor(private usersService: UsersService) { }
 
   ngOnInit() {
-    this.usersService.cast.subscribe(user => this.user = user);
+    this.usersService.cast.subscribe(user => this.user = user); // Cast service as observable, subscribe the result and update the user
+    console.log('subscribed component two');
   }
 
 }
